@@ -1,8 +1,5 @@
-; Author: Dr. Sandro Lubis (Jan 2020)
-; How to filter CCEW signals using kf_filter
-; Lubis, SW, Respati, MR. Impacts of convectively coupled
-; equatorial waves on rainfall extremes in Java, Indonesia.
-; Int J Climatol. 2021; 41: 2418– 2440
+; Author: Jasper (June 2024)
+; 日历格式转换
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 load "/Users/tfeng/.conda/envs/ncl/lib/ncarg/nclscripts/contrib/kf_filter.ncl"
