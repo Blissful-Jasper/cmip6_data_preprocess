@@ -30,5 +30,6 @@
 
 本项目中的自动化脚本及相关代码仅供学习和研究使用。使用本项目代码的用户应遵守相关法律法规及目标网站的使用条款。
 
-
-> 参考的代码：https://github.com/mmaiergerber/wk_spectra
+参考的代码：
+> https://github.com/mmaiergerber/wk_spectra
+> https://github.com/fadhlilmuhammad/Local-CCEWs-Phase-Diagram
