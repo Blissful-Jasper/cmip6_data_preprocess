@@ -10,7 +10,7 @@ Created on Wed Jun  5 19:09:23 2024
 @email: Xpji@hhu.edu.cn
 
 @introduction: keep learning although slowly
-
+ 参考自 ： https://github.com/mmaiergerber/wk_spectra
 """
 
 
