@@ -43,7 +43,7 @@ backup_folder="/Datadisk/CMIP6_daily2/prc/${var}_backup"
 # Create output and backup directories if they don't exist
 mkdir -p "$output_folder" "$backup_folder"
 
-Define the list of models to process
+# Define the list of models to process
 models=("INM-CM4-8" "INM-CM5-0" "IPSL-CM6A-LR" "MPI-ESM1-2-HR")
 
 # Process each model
@@ -51,7 +51,7 @@ for model in "${models[@]}"; do
     echo "Processing model ${model}..."
 
     # Find the files for the current model
-    nc_files=($(find "$input_dir" -type f -name "${var}_Amon_${model}*.nc"))
+    nc_files=($(find "$input_dir" -type f -name "${var}_Amon_${model}_*.nc"))
 
     # Check if there are files to process
     if [ ${#nc_files[@]} -gt 0 ]; then
@@ -74,9 +74,12 @@ for model in "${models[@]}"; do
             rm "${output_folder}/${prefix}_mergetime.nc"
 
             # Move original files to backup folder
-            mv "${nc_files[@]}" "$backup_folder"
-
-        else
+            for file in "${nc_files[@]}"; do
+                mv "$file" "$backup_folder"
+            done
+            # Move processed data to backup folder
+            mv "${output_folder}/${prefix}_1997_2014.nc" "$backup_folder"
+        elif [ ${#nc_files[@]} -eq 1 ]; then
             echo "Only one file found for model ${model}, directly processing..."
 
             # Process single file: select the years 1997-2014 and interpolate
@@ -85,10 +88,10 @@ for model in "${models[@]}"; do
 
             # Move original file to backup folder
             mv "${nc_files[0]}" "$backup_folder"
+            mv "${output_folder}/${prefix}_1997_2014.nc" "$backup_folder"
         fi
 
-        # Move processed data to backup folder
-        mv "${output_folder}/${prefix}_1997_2014.nc" "$backup_folder"
+        
     else
         echo "No files found for model ${model}. Skipping..."
     fi
