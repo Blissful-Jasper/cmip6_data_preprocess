@@ -4,7 +4,7 @@
 
 
 ## code 1 ：Interp_monthly_netcdf_V2.sh
-
+```bash
 #########################################################################################################################
 #                                                                                                                       #
 #  Description: This script is designed to process monthly model data by merging multiple files of the same model,      #
@@ -20,7 +20,7 @@
 #  3. The merged data will be output in a 2x2 degree interpolated format.                                               #
 #                                                                                                                       #
 #########################################################################################################################
-
+```
 
 ## code 2： pr_interp_monthly_netcdf.sh
 
