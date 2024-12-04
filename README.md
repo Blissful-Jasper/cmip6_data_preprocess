@@ -5,17 +5,18 @@
 
 ## code 1 ：Interp_monthly_netcdf_V2.sh
 
-usage: sh Interp_monthly_netcdf.sh "<font color='cyan'>pr</font>"
+usage: sh Interp_monthly_netcdf.sh <span style="color: cyan">pr</span>
 
-<font color='cyan'>"pr"</font> is the **variable name**, because the netcdf file is named as follows:
+<span style="color: cyan">"pr"</span> is the **variable name**, because the netcdf file is named as follows:
 
-<font color='cyan'>"**pr**"</font>_Amon_IPSL-CM6A-LR_historical_r1i1p1f1_gr_185001-201412.nc
+<span style="color: cyan">"**pr**"</span>_Amon_IPSL-CM6A-LR_historical_r1i1p1f1_gr_185001-201412.nc
 
 If the netcdf file is named:
 
-<font color='cyan'>"**prc**"</font>_Amon_IPSL-CM6A-LR_historical_r1i1p1f1_gr_185001-201412.nc
+<span style="color: cyan">"**prc**"</span>_Amon_IPSL-CM6A-LR_historical_r1i1p1f1_gr_185001-201412.nc
 
-Then change the variable name: <font color='cyan'>"**prc**"</font>
+Then change the variable name: <span style="color: cyan">"**prc**"</span>
+
 
 
 ```bash
