@@ -7,15 +7,15 @@
 
 usage: sh Interp_monthly_netcdf.sh "pr"
 
-"pr" is the **variable name**, because the netcdf file is named as follows:
+<font color=Cyan>"pr"</font> is the **variable name**, because the netcdf file is named as follows:
 
-**pr**_Amon_IPSL-CM6A-LR_historical_r1i1p1f1_gr_185001-201412.nc
+<font color=Cyan>"**pr**"</font>_Amon_IPSL-CM6A-LR_historical_r1i1p1f1_gr_185001-201412.nc
 
 If the netcdf file is named:
 
-**prc**_Amon_IPSL-CM6A-LR_historical_r1i1p1f1_gr_185001-201412.nc
+<font color=Cyan>"**prc**"</font>_Amon_IPSL-CM6A-LR_historical_r1i1p1f1_gr_185001-201412.nc
 
-Then change the variable name: **prc**
+Then change the variable name: <font color=Cyan>"**prc**"</font>
 
 ```bash
 #########################################################################################################################
