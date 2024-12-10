@@ -1,9 +1,14 @@
 # cmip6_data_preprocess code describe
 
 - How to batch process nc data of cmip6
+- 
+## code 1 ：Preprocess_netcdf_V3.sh
+
+This code nearly same as code2, but modified some details, so this is the latest version.
+The usage method is same as code2.
 
 
-## code 1 ：Interp_monthly_netcdf_V2.sh
+## code 2 ：Interp_monthly_netcdf_V2.sh
 
 usage: sh Interp_monthly_netcdf.sh "`pr`"
 
@@ -36,7 +41,7 @@ Then change the variable name: `prc`
 #########################################################################################################################
 ```
 
-## code 2： pr_interp_monthly_netcdf.sh
+## code 3： pr_interp_monthly_netcdf.sh
 
 This is the first version of Interp_monthly_netcdf_V2.sh. This script is less flexible and more clumsy than Interp_monthly_netcdf_V2.sh.
 
