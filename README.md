@@ -1,7 +1,15 @@
 # cmip6_data_preprocess code describe
 
+
+
 - How to batch process nc data of cmip6
-- 
+
+
+
+## code 0 : batch_kf_filter.sh && cmip6_model_filter_single.ncl
+- 2024.12.16
+these two code should be used together to deal with netcdf file, which filter CCEW signalsa using kf_filter (ncl function)
+  
 ## code 1 ：Preprocess_netcdf_V3.sh
 
 This code nearly same as code2, but modified some details, so this is the latest version.
