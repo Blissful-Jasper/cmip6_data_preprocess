@@ -50,7 +50,7 @@ Then change the variable name: `prc`
 #########################################################################################################################
 ```
 
-## code 3： pr_interp_monthly_netcdf.sh
+## code 3：./backup/pr_interp_monthly_netcdf.sh
 
 This is the first version of Interp_monthly_netcdf_V2.sh. This script is less flexible and more clumsy than Interp_monthly_netcdf_V2.sh.
 
